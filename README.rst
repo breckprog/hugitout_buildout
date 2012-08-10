@@ -22,7 +22,7 @@ virtualenv like so::
   $ $PYTHONHOME/bin/virtualenv .
 
 Where $PYTHONHOME/bin is where your Python installation installs its scripts.
-This will create a virtualenv within the ``ecommbuildout`` directory.
+This will create a virtualenv within the ``hugitout_buildout`` directory.
 
 After you've succesfully done the above, invoke the buildout via::
 
@@ -49,13 +49,13 @@ running application at http://127.0.0.1:6546 in a browser.  You may
 log in as ``admin`` with password ``admin`` to the management interface at
 http://127.0.0.1:6546/manage::
 
-  [chrism@oops ecommbuildout]$ bin/supervisord
-  [chrism@oops ecommbuildout]$ bin/pserve etc/development.ini --reload
+  [chrism@oops hugitout_buildout]$ bin/supervisord
+  [chrism@oops hugitout_buildout]$ bin/pserve etc/development.ini --reload
 
 Success looks like this::
 
-  [chrism@oops ecommbuildout]$ bin/supervisord
-  [chrism@thinko ecommbuildout]$ bin/pserve etc/development.ini --reload
+  [chrism@oops hugitout_buildout]$ bin/supervisord
+  [chrism@thinko hugitout_buildout]$ bin/pserve etc/development.ini --reload
   Starting subprocess with file monitor
   2012-03-21 14:47:15,711 INFO  [ZEO.ClientStorage][MainThread] ('localhost', 9993) ClientStorage (pid=20128) created RW/normal for storage: '1'
   2012-03-21 14:47:15,713 INFO  [ZEO.cache][MainThread] created temporary cache file '<fdopen>'
@@ -116,7 +116,7 @@ If you're a developer on the project and you need to get the software and
 your database data up to date after walking away for a few days, you should
 do these things::
 
-  $ cd ecommbuildout
+  $ cd hugitout_buildout
   $ git pull
   $ bin/buildout
   $ bin/develop up

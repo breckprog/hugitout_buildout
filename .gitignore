@@ -1,0 +1,9 @@
+bin/
+include/
+lib/
+eggs/
+develop-eggs/
+src/
+var/
+.installed.cfg
+.mr.developer.cfg

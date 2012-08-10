@@ -45,9 +45,9 @@ installing the ``build-essentials`` and ``python-devel`` (or perhaps
 installed.  Then try again.
 
 You should then be able to run the following commands and visit the
-running application at http://127.0.0.1:6546 in a browser.  You may
+running application at http://127.0.0.1:6547 in a browser.  You may
 log in as ``admin`` with password ``admin`` to the management interface at
-http://127.0.0.1:6546/manage::
+http://127.0.0.1:6547/manage::
 
   [chrism@oops hugitout_buildout]$ bin/supervisord
   [chrism@oops hugitout_buildout]$ bin/pserve etc/development.ini --reload
@@ -65,7 +65,7 @@ Success looks like this::
   2012-03-21 14:47:15,819 INFO  [ZEO.ClientStorage][Connect([(2, ('localhost', 9993))])] ('localhost', 9993) Connected to storage: ('localhost', 9993)
   2012-03-21 14:47:15,820 INFO  [ZEO.ClientStorage][Connect([(2, ('localhost', 9993))])] ('localhost', 9993) No verification necessary -- empty cache
   Starting server in PID 20128.
-  serving on http://0.0.0.0:6546
+  serving on http://0.0.0.0:6547
 
 The ``supervisord`` command starts the ZEO server (and any other required
 processes).  The application will not work without the ZEO server running.
